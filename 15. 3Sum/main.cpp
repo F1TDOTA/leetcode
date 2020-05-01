@@ -96,7 +96,7 @@ public:
     }
 };
 
-//
+// 
 class Solution {
 public:
     vector< vector<int> > threeSum(vector<int>& nums) {
@@ -107,9 +107,11 @@ public:
     }
 };
 
+#define BF_NUM_ENTRIES_FOR_SERVER 1e6
 
 int main(int argc, char* argv[])
 {
+	printf("--%d\n", BF_NUM_ENTRIES_FOR_SERVER);
     // [-1,0,1,2,-1,-4]
     vector<int> inputvec;
     inputvec.push_back(-1);
@@ -118,7 +120,7 @@ int main(int argc, char* argv[])
     inputvec.push_back(2);
     inputvec.push_back(-1);
     inputvec.push_back(-4);
-    class Solution a;
+    class Solution1 a;
     vector< vector<int> > ret = a.threeSum(inputvec);
     printf("\n------------my answer------------\n");
     for (vector< vector<int> >::iterator it = ret.begin(); it != ret.end(); ++it)
